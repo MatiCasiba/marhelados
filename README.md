@@ -186,4 +186,13 @@ a:active{
 }
 ```
 
+## Actualización 1
+Se le agregó un fondo a la barra de navegación y se ajustó un poco el tamaño de header, otra cosa que se agregó fue el position:
+```sh
+header{
+    width: 100%; # ocupará el ancho total de la pantalla
+    position: fixed;
+    top: 0;
+}
+```
 

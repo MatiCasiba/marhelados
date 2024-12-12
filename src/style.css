@@ -1,17 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Bowlby+One&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Squada+One&display=swap');
 
 *{
+    /* border: 1px solid red; */
     box-sizing: border-box;
     margin: 0;
 }
 
 :root{
     --colorFondo: #f7d6e0;
-    --colorBody: #eff7f64f;
+    --colorFondoNav: #ff8fab;
+    --colorbordeNav: #ea086a;
+    --colorBody: #eff7f642;
     --colorMain: #eff7f6;
     --colorTitulo: #7bdff2;
     --colorLetraTitulo: #f7d6e0;
-    --colorLetraSubtitulo: #7007ea;
+    --colorLetraSubtitulo: #5c7aff;
     --colorSubtitulo: #b2f7ef;
     --colorBorde: #7bdff2;
     --colorLink: #f7d6e0;
@@ -27,19 +30,29 @@ html{
 }
 
 header{
+    width: 100%;
     text-align: center;
     background-color: var(--colorTitulo);
     color: var(--colorLetraTitulo);
     text-shadow: 1px 2px 3px black;
-    padding: 10px;
+    padding: 5px;
     box-shadow: 0 5px 30px black;
+
+    position: fixed;
+    top: 0;
+}
+nav{
+    background-color: var(--colorFondoNav);
+    border: 2px solid var(--colorbordeNav);
+    border-radius: 30px;
+    padding: 5px;
 }
 nav ul{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 25px;
+    gap: 12px;
 
     list-style: none;
     
@@ -48,9 +61,9 @@ nav ul{
     
 }
 
-body{
+/* body{
     background-color: var(--colorBody);
-}
+} */
 
 main{
     font-family: "Averia Libre", system-ui;
@@ -58,7 +71,7 @@ main{
 
     max-width: 700px;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 220px;
     padding: 10px;
 
     background-color: var(--colorMain);
@@ -70,7 +83,6 @@ h1{
     font-family: "Bowlby One", sans-serif;
     font-size: 40px;
     letter-spacing: 3px;
-    padding: 15px;
 }
 h2{
     font-size: 25px;
@@ -132,6 +144,8 @@ a{
     align-items: center;
     justify-content: center;
     gap: 15px;
+
+    margin-bottom: 50px;
 }
 .texto-encabezado{ /* clase del elemento p */
     font-family: "Sour Gummy", serif;
