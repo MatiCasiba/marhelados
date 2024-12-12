@@ -138,3 +138,52 @@ footer li{
 }
 ```
 
+## Navegacion y scroll-behavior
+En el elemento header eh agregado una lista para navegar a las secciones que se encuentran en la página:
+```sh
+<header>
+      <h1>Marelados</h1>
+      <p class="texto-encabezado">(Trabajamos con productos de Grido y gio)</p>
+      <nav>
+        <ul>
+          <li><a href="#gio">gio</a></li>
+          <li><a href="#bombones">Bombones</a></li>
+          <li><a href="#sin-tacc">Sin TACC</a></li>
+          <li><a href="#tentacion">Tentacion</a></li>
+          <li><a href="#postres">Postres</a></li>
+          <li><a href="#tortas">Tortas</a></li>
+          <li><a href="#familiar">Familiar</a></li>
+        </ul>
+      </nav>
+</header>
+```
+* Los signos # son id que se encuentran en los elementos h2, que vendrían ser los subtitulos. Al momento de seleccionarlos aparecia de golpe en la seccion que se eligio, entonces utilicé un scroll-behavior, este hará que tenga una animación de bajada cuando se seleccione una palabra de la lista:
+```sh
+html{
+    scroll-behavior: smooth;
+}
+```
+## Animacion de cambio de color en la navegacion:
+Otra cosa que hice en las listas del elemento nav, fue que actuen con cambios de color dependiendo de la accion que tengan:
+```sh
+a{
+    text-decoration: none;
+    letter-spacing: 3px; # espacio entre las letras
+}
+
+a:link{
+    color: var(--colorLink);
+}
+a:visited{
+    color: var(--colorVisited);
+}
+a:hover{
+    color: var(--colorHover);
+    text-decoration: none; # elimino la linea debajo de la palabra
+}
+a:active{
+    color: var(--colorActive);
+}
+```
+
+
