@@ -20,7 +20,9 @@
     --colorLink: #f7d6e0;
     --colorVisited: #5c7aff;
     --colorHover: #f8e16c;
-    --colorActive: #ef767a; 
+    --colorActive: #ef767a;
+    --colorSinStock: #c1121f;
+    --colorHayStock: #3fa34d; 
 }
 
 html{
@@ -157,13 +159,19 @@ a{
 
     text-shadow: 1px 1px 3px black;
 }
+.sin-stock{
+    color: var(--colorSinStock);
+}
+.con-stock{
+    color: var(--colorHayStock);
+}
 
 /* hover */
 a:link{
     color: var(--colorLink);
 }
 a:visited{
-    color: var(--colorVisited);
+    color: var(--colorLink);
 }
 a:hover{
     color: var(--colorHover);

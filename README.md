@@ -196,3 +196,18 @@ header{
 }
 ```
 
+## Con Stock y Sin Stock
+Eh agregado elementos "p" y con clases, a esto le asigne colores verdes y rojos
+```sh
+# html
+<p class="con-stock">con Stock</p>
+<p class="sin-stock">¡¡¡Sin Stock!!!</p>
+
+# css
+.sin-stock{
+    color: var(--colorSinStock); #rojo
+}
+.con-stock{
+    color: var(--colorHayStock); #verde
+}
+```
