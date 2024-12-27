@@ -211,3 +211,15 @@ Eh agregado elementos "p" y con clases, a esto le asigne colores verdes y rojos
     color: var(--colorHayStock); #verde
 }
 ```
+
+## Actualización 2: seleccion para palitos helados
+Dentro del menú (la barra que se encuentra arriba), eh agregado una lista más con un elemento de anclaje que te dirige a la seccion de helados palitos:
+```sh
+  <nav>
+    <ul>
+      <li><a href="#palitos-helados">Palitos</a></li>
+    </ul>
+  </nav>
+
+  <h2 id="palitos-helados">Helados Palitos</h2>
+````
