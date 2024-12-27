@@ -267,3 +267,23 @@ Eh agregado el icono de whatsapp, la finalidad de este es que el usuario selecci
 
 ```
 * Nota: el target="_blank" se encargará de abrirte otra pestaña, la finalidad de este es para que no se le quite la página al usuario en la misma pestaña, yo quiero que siga conservando el lugar en el que se encuentra y cuando seleccione el icono, se abra otra pestaña nueva.
+
+## Actualización 4: correcciones con la clase centro
+Noté dos imagenes en la seccion de "Tentación" que no estaban correctamente alineadas, lo solucioné con la clase centro:
+```sh
+<div class="centro">
+  <figure>
+    <img src="/image/tentaciones/tentacion-chocolate-almendras.webp" alt="imagen t chcolate con almendras">
+    <figcaption>Sabor Chocolate con Almendras <br>- Precio: $5400</figcaption>
+    <p class="con-stock">con Stock</p>
+  </figure>
+</div>
+
+<div class="centro">
+  <figure>
+    <img src="/image/tentaciones/tentacion-DDL-granizado.webp" alt="imagen t dulce de leche granizado">
+    <figcaption>Sabor Dulce de Leche Granizado <br>- Precio: $5400</figcaption>
+    <p class="con-stock">con Stock</p>
+  </figure>
+</div>
+```
