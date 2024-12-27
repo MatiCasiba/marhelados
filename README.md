@@ -222,4 +222,48 @@ Dentro del menú (la barra que se encuentra arriba), eh agregado una lista más 
   </nav>
 
   <h2 id="palitos-helados">Helados Palitos</h2>
-````
+```
+
+## Actualización 3
+
+### Adaptando a dispositivos chicos
+Al momento de adaptar imágenes y tamaño del titulo para celulares, lo realicé con @media:
+```sh
+@media (max-width: 600px) {
+    img {
+        width: 150px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    nav ul {
+        flex-direction: flex;
+    }
+}
+```
+
+### Icono de whatsapp: trabajado con position
+Eh agregado el icono de whatsapp, la finalidad de este es que el usuario seleccione este icono y lo mandará directamente al contocato, al icono lo encontrarás en l esquina derecha inferior de la página. Este icono te seguirá tanto cuando bajes como cuando subas, para lograrlo lo hice de la siguiente forma:
+```sh
+# html:
+<main>
+    <div class="fixed-icon">
+        <a href="enlace-del-siguiente-sitio" target="_blank"><img src="public/image/wapp-icon.png" alt="logo whatsapp" class="icon"></a>
+    </div>
+</main>
+
+# css:
+.fixed-icon{
+    position: fixed;
+    bottom: 10px; # abajo
+    right: 10px; # hacia la derecha
+}
+.fixed-icon .icon{
+    width: 50px; # ancho
+    height: auto;
+    border: none;
+    box-shadow: none;
+}
+
+```
+* Nota: el target="_blank" se encargará de abrirte otra pestaña, la finalidad de este es para que no se le quite la página al usuario en la misma pestaña, yo quiero que siga conservando el lugar en el que se encuentra y cuando seleccione el icono, se abra otra pestaña nueva.

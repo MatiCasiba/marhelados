@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Bowlby+One&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Squada+One&display=swap');
 
+
 *{
     /* border: 1px solid red; */
     box-sizing: border-box;
@@ -110,8 +111,9 @@ img{
     box-shadow: 1px 1px 5px 2px black;
 }
 figcaption{
-    font-family: "Sour Gummy", serif;
-    font-size: 12px;
+    text-align: center;
+    max-width: 200px;
+    font-size: 13px;
     margin-top: 10px; 
 }
 
@@ -135,10 +137,25 @@ footer ul{
 footer li{
     padding: 0 10px;
 }
-
 a{
     text-decoration: none;
     letter-spacing: 3px;
+}
+p{
+    text-align: center;
+}
+
+/* clases */
+.fixed-icon{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+.fixed-icon .icon{
+    width: 50px;
+    height: auto;
+    border: none;
+    box-shadow: none;
 }
 
 .helados-image{
@@ -149,6 +166,9 @@ a{
     gap: 15px;
 
     margin-bottom: 50px;
+}
+.centro{
+    text-align: center;
 }
 .texto-encabezado{ /* clase del elemento p */
     font-family: "Sour Gummy", serif;
@@ -180,4 +200,17 @@ a:hover{
 }
 a:active{
     color: var(--colorActive);
+}
+
+/* @media */
+@media (max-width: 600px) {
+    img {
+        width: 150px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    nav ul {
+        flex-direction: flex;
+    }
 }
