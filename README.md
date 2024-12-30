@@ -287,3 +287,5 @@ Noté dos imagenes en la seccion de "Tentación" que no estaban correctamente al
   </figure>
 </div>
 ```
+## Actualización 5: relleno del nav
+Se actualizó el padding del nav, dandole a este un tamaño de 8px

@@ -49,7 +49,7 @@ nav{
     background-color: var(--colorFondoNav);
     border: 2px solid var(--colorbordeNav);
     border-radius: 30px;
-    padding: 5px;
+    padding: 8px;
 }
 nav ul{
     display: flex;
